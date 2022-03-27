@@ -1,18 +1,18 @@
-# Extracting the bosh dataset
+#Extracting the bosh dataset
 ```bash
 echo 'test'
 ```
-# Set environment variable for model
+#Set environment variable for model
 ```bash
 ```
-# Training the model for object detection
+#Training the model for object detection
 ```bash
 nohup python /workspace/tensorflow/models/research/object_detection/train.py \
     --logtostderr \
     --train_dir=output/train/autti \
     --pipeline_config_path=config/autti_ssd_mobilenet_v1_coco.config &
 ```
-# Spin up tensorboard
+#Spin up tensorboard
 ```bash
 tensorboard --logdir output/train/autti --port 4567
 ```
